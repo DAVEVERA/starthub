@@ -1,6 +1,6 @@
 Starthub ---- MNRV ---- AINSTEIN
 
-/home/user/starthub/
+starthub/
 ├── electron.vite.config.ts
 ├── package.json
 ├── tsconfig.json
@@ -17,16 +17,16 @@ Starthub ---- MNRV ---- AINSTEIN
 │       ├── main.tsx
 │       ├── components/
 │       │   ├── layout/
-│       │   │   ├── GridLayout.tsx       # Resizable raster container
-│       │   │   └── FramePanel.tsx       # <webview> + resize handles + overlay UI
+│       │   │   ├── GridLayout.tsx    # Resizable raster container
+│       │   │   └── FramePanel.tsx    # <webview> + resize handles + overlay UI
 │       │   ├── chatbox/
-│       │   │   └── ChatBox.tsx          # Claude AI input + streaming responses
+│       │   │   └── ChatBox.tsx       # Claude AI input + streaming responses
 │       │   └── config/
 │       │       └── FrameConfigForm.tsx  # Frame URL/naam configuratie modal
 │       ├── hooks/
-│       │   └── useClaude.ts             # Claude API hook met streaming + tools
+│       │   └── useClaude.ts          # Claude API hook met streaming + tools
 │       └── store/
-│           └── layout.ts                # Zustand store: frames, layout config
+│           └── layout.ts                 # Zustand store: frames, layout config
 
 
 npm run dev — Electron opent in fullscreen met 4x1 grid
