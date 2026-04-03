@@ -1,5 +1,17 @@
 Starthub ---- MNRV ---- AINSTEIN
 
+Quick Start: Start npm run dev voor een fullscreen 4x1 grid interface.
+
+Bypass Restrictions: Navigeer naar ChatGPT of Gemini zonder X-Frame-fouten.
+
+Claude Integration: Bestuur frames met tekstcommando's (bijv. "Stuur 'Hallo' naar frame 1").
+
+Resizable Layout: Versleep de splitter om frame-afmetingen direct aan te passen.
+
+Live Config: Wijzig URL's en herlaad webviews via de configuratie-modal.
+
+Build: Genereer een Linux .AppImage met npm run build.
+
 starthub/
 ├── electron.vite.config.ts
 ├── package.json
@@ -29,9 +41,3 @@ starthub/
 │           └── layout.ts                 # Zustand store: frames, layout config
 
 
-npm run dev — Electron opent in fullscreen met 4x1 grid
-Navigeer frames naar chatgpt.com, gemini.google.com — beide laden zonder X-Frame fout
-Type in chatbox: "Stuur 'Hallo' naar ChatGPT in frame 1" → Claude voert het uit
-Resize een frame door de splitter te slepen
-Open config modal, verander frame URL, herstart webview
-npm run build — genereert .AppImage voor Linux
