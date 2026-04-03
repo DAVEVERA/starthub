@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #0f1117;
+  color: #e2e8f0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Webview fills its container */
+webview {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Custom scrollbar for chat */
+.chat-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.chat-scroll::-webkit-scrollbar-track {
+  background: #1a1d27;
+}
+.chat-scroll::-webkit-scrollbar-thumb {
+  background: #2d3148;
+  border-radius: 3px;
+}
+.chat-scroll::-webkit-scrollbar-thumb:hover {
+  background: #5b6af0;
+}
+
+/* Resize handle */
+.resize-handle {
+  background: #2d3148;
+  transition: background 0.15s;
+  flex-shrink: 0;
+  cursor: col-resize;
+}
+.resize-handle:hover,
+.resize-handle.active {
+  background: #5b6af0;
+}
+
+.resize-handle-v {
+  cursor: row-resize;
+}
